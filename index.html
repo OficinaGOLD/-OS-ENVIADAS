@@ -3,23 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Book Digital - Equipamentos</title>
+  <title>Data Book Digital - Clientes</title>
   <link rel="stylesheet" href="Ativos/css/style.css">
   <style>
-    /* Estilos Integrados do Pure CSS3 Slider - Copiado do Relatório */
     .header-slider-wrapper { position: sticky; top: 0; z-index: 1000; }
-    #slider { width: 90%; max-width: 1080px; height: 70px; position: relative; overflow: hidden; margin: 8px auto 15px auto; border: 1px solid #333; background: #fff; }
-    .slides { display: flex; width: 400%; height: 100%; position: relative; -webkit-animation: slide 5s infinite; -moz-animation: slide 5s infinite; animation: slide 5s infinite; }
-    .slider { flex: 0 0 25%; height: 100%; position: relative; z-index: 1; overflow: hidden; box-sizing: border-box; border-right: 2px solid #333; }
-    .image { width: 100%; height: 100%; position: relative; display: flex; align-items: center; justify-content: center; }
+    #slider { width: 90%; max-width: 1080px; height: 70px; position: relative; overflow: hidden; margin: 8px auto 15px; border: 1px solid #333; background: #fff; }
+    .slides { display: flex; width: 400%; height: 100%; position: relative; animation: slide 5s infinite; }
+    .slider { flex: 0 0 25%; height: 100%; overflow: hidden; box-sizing: border-box; border-right: 2px solid #333; }
+    .image { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
     .image img { width: 70%; height: 80%; object-fit: contain; display: block; }
-    .switch { width: 120px; height: 10px; position: absolute; bottom: 18px; z-index: 99; left: 20px; }
-    .switch>ul { list-style: none; overflow: hidden; padding: 0; margin: 0; }
-    .switch>ul>li { width: 6px; height: 6px; border-radius: 50%; background: #333; float: left; margin-right: 9px; cursor: pointer; }
-    .on { width: 100%; height: 100%; border-radius: 50%; background: rgba(23, 117, 177, 1); position: relative; -webkit-animation: on 5s infinite; -moz-animation: on 5s infinite; animation: on 5s infinite; }
-    @-webkit-keyframes slide { 0%, 22% { transform: translateX(0); } 25%, 47% { transform: translateX(-25%); } 50%, 72% { transform: translateX(-50%); } 75%, 100% { transform: translateX(-75%); } }
+    .switch { width: 120px; height: 10px; position: absolute; bottom: 18px; left: 20px; }
+    .switch ul { list-style: none; overflow: hidden; padding: 0; margin: 0; }
+    .switch li { width: 6px; height: 6px; border-radius: 50%; background: #333; float: left; margin-right: 9px; }
+    .on { width: 100%; height: 100%; border-radius: 50%; background: #1775b1; animation: on 5s infinite; }
+    .logo-cliente { display: block; width: 100%; height: 82px; margin: 0 auto 16px; padding: 8px; object-fit: contain; background: #fff; border-radius: 8px; }
     @keyframes slide { 0%, 22% { transform: translateX(0); } 25%, 47% { transform: translateX(-25%); } 50%, 72% { transform: translateX(-50%); } 75%, 100% { transform: translateX(-75%); } }
-    @-webkit-keyframes on { 0%, 22% { margin-left: 0; } 25%, 47% { margin-left: 15px; } 50%, 100% { margin-left: 30px; } }
     @keyframes on { 0%, 22% { margin-left: 0; } 25%, 47% { margin-left: 15px; } 50%, 100% { margin-left: 30px; } }
   </style>
 </head>
@@ -33,351 +31,74 @@
         </div>
         <div class="header-text">
           <div class="tipo">Data Book Digital</div>
-          <div class="tag">Equipamentos</div>
+          <div class="tag">Clientes</div>
         </div>
       </div>
     </header>
-
-    <!-- Carrossel de Imagens -->
     <div id="slider">
-        <div class="slides">
-            <div class="slider">
-                <div class="image">
-                    <img src="https://i.ibb.co/V07bLNT1/GOLD-MAQUINAS.png" alt="Logo Gold Redutores">
-                </div>
-            </div>
-            <div class="slider">
-                <div class="image">
-                    <img src="https://i.ibb.co/r9DRsZq/GOLD-REDUTORES.png" alt="GOLD REDUTORES" border="0">
-                </div>
-            </div>
-            <div class="slider">
-                <div class="image">
-                    <img src="https://i.ibb.co/3mVp95wL/GOLD-AUTOMA-O.png" alt="GOLD AUTOMAÇÃO" border="0">
-                </div>
-            </div>
-            <div class="slider" aria-hidden="true">
-              <div class="image">
-                <img src="https://i.ibb.co/V07bLNT1/GOLD-MAQUINAS.png" alt="">
-              </div>
-            </div>
-        </div>
-        <div class="switch">
-            <ul>
-                <li><div class="on"></div></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
+      <div class="slides">
+        <div class="slider"><div class="image"><img src="https://i.ibb.co/V07bLNT1/GOLD-MAQUINAS.png" alt="Logo Gold Redutores"></div></div>
+        <div class="slider"><div class="image"><img src="https://i.ibb.co/r9DRsZq/GOLD-REDUTORES.png" alt="Gold Redutores"></div></div>
+        <div class="slider"><div class="image"><img src="https://i.ibb.co/3mVp95wL/GOLD-AUTOMA-O.png" alt="Gold Automação"></div></div>
+        <div class="slider" aria-hidden="true"><div class="image"><img src="https://i.ibb.co/V07bLNT1/GOLD-MAQUINAS.png" alt=""></div></div>
+      </div>
+      <div class="switch"><ul><li><div class="on"></div></li><li></li><li></li></ul></div>
     </div>
   </div>
-
   <main class="container">
     <section class="card">
-      <h2>Equipamentos cadastrados</h2>
-      <p>Digite a TAG, modelo, tipo ou local para localizar o equipamento.</p>
-      <input class="busca" id="busca" type="text" placeholder="Exemplo: ME-631011, motoredutor, WEG...">
+      <h2>Clientes cadastrados</h2>
+      <p>Selecione um cliente para visualizar somente os equipamentos vinculados a ele.</p>
+      
+      
     </section>
-
     <section class="grid-equipamentos" id="listaEquipamentos">
       
-      <a class="equipamento-card" href="equipamentos/OS-6251-1706589/index.html" data-busca="os 6251 - 1706589 motoredutor weg wcg20 - v/f10 ">
-        <strong>OS 6251 - 1706589</strong>
-        <span>MOTOREDUTOR WEG</span>
-        <span>WCG20 - V/F10</span>
-        <small></small>
+      <a class="equipamento-card" href="clientes/ADM-DO-BRASIL-LTDA/index.html">
+        <img class="logo-cliente" src="Ativos/img/clientes/adm.png" alt="Logo ADM DO BRASIL LTDA" loading="lazy">
+        <strong>ADM DO BRASIL LTDA</strong>
+        <span>2 equipamento(s)</span>
       </a>
 
-      <a class="equipamento-card" href="equipamentos/OS-5684-2394460/index.html" data-busca="os 5684 - 2394460 exd 160l ">
-        <strong>OS 5684 - 2394460</strong>
-        <span>EXD</span>
-        <span>160L</span>
-        <small></small>
+      <a class="equipamento-card" href="clientes/BUNGE-ALIMENTOS-S-A/index.html">
+        <img class="logo-cliente" src="Ativos/img/clientes/bunge.svg" alt="Logo BUNGE ALIMENTOS S/A" loading="lazy">
+        <strong>BUNGE ALIMENTOS S/A</strong>
+        <span>1 equipamento(s)</span>
       </a>
 
-      <a class="equipamento-card" href="equipamentos/OS-5641-891527/index.html" data-busca="os 5641 - 891527 exd 132s ">
-        <strong>OS 5641 - 891527</strong>
-        <span>EXD</span>
-        <span>132S</span>
-        <small></small>
+      <a class="equipamento-card" href="clientes/CARGILL-AGRICOLA-S-A/index.html">
+        <img class="logo-cliente" src="Ativos/img/clientes/cargill.svg" alt="Logo CARGILL AGRICOLA S.A" loading="lazy">
+        <strong>CARGILL AGRICOLA S.A</strong>
+        <span>3 equipamento(s)</span>
       </a>
 
-      <a class="equipamento-card" href="equipamentos/OS-5701-3294440/index.html" data-busca="os 5701 - 3294440 exd 180m ">
-        <strong>OS 5701 - 3294440</strong>
-        <span>EXD</span>
-        <span>180M</span>
-        <small></small>
+      <a class="equipamento-card" href="clientes/COFCO-INTERNATIONAL-BRASIL-S-A/index.html">
+        <img class="logo-cliente" src="Ativos/img/clientes/cofco.png" alt="Logo COFCO INTERNATIONAL BRASIL S.A." loading="lazy">
+        <strong>COFCO INTERNATIONAL BRASIL S.A.</strong>
+        <span>29 equipamento(s)</span>
       </a>
 
-      <a class="equipamento-card" href="equipamentos/OS-5715-3294412/index.html" data-busca="os 5715 - 3294412 exd 225s/m ">
-        <strong>OS 5715 - 3294412</strong>
-        <span>EXD</span>
-        <span>225S/M</span>
-        <small></small>
+      <a class="equipamento-card" href="clientes/DUAL-DUARTE-ALBUQUERQUE-COM-E-IND-LTDA/index.html">
+        <img class="logo-cliente" src="Ativos/img/logo_gold.png" alt="Logo DUAL DUARTE ALBUQUERQUE COM. E IND. LTDA" loading="lazy">
+        <strong>DUAL DUARTE ALBUQUERQUE COM. E IND. LTDA</strong>
+        <span>1 equipamento(s)</span>
       </a>
 
-      <a class="equipamento-card" href="equipamentos/OS-5740-3294401/index.html" data-busca="os 5740 - 3294401 exd 90s ">
-        <strong>OS 5740 - 3294401</strong>
-        <span>EXD</span>
-        <span>90S</span>
-        <small></small>
+      <a class="equipamento-card" href="clientes/OLEOPLAN-RONDONIA-INDUSTRIA-DE-BIOCOMBUSTIVEL-LTDA/index.html">
+        <img class="logo-cliente" src="Ativos/img/clientes/oleoplan.png" alt="Logo OLEOPLAN RONDONIA INDUSTRIA DE BIOCOMBUSTIVEL LTDA" loading="lazy">
+        <strong>OLEOPLAN RONDONIA INDUSTRIA DE BIOCOMBUSTIVEL LTDA</strong>
+        <span>2 equipamento(s)</span>
       </a>
 
-      <a class="equipamento-card" href="equipamentos/OS-5790-3294495/index.html" data-busca="os 5790 - 3294495 exd 132s ">
-        <strong>OS 5790 - 3294495</strong>
-        <span>EXD</span>
-        <span>132S</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5628-891507/index.html" data-busca="os 5628 - 891507 exd 160m ">
-        <strong>OS 5628 - 891507</strong>
-        <span>EXD</span>
-        <span>160M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5742-3294496/index.html" data-busca="os 5742 - 3294496 exd 112m ">
-        <strong>OS 5742 - 3294496</strong>
-        <span>EXD</span>
-        <span>112M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5604-891572/index.html" data-busca="os 5604 - 891572 exd 180l ">
-        <strong>OS 5604 - 891572</strong>
-        <span>EXD</span>
-        <span>180L</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5718-3294480/index.html" data-busca="os 5718 - 3294480 exd 160m ">
-        <strong>OS 5718 - 3294480</strong>
-        <span>EXD</span>
-        <span>160M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5666-891562/index.html" data-busca="os 5666 - 891562 exd 90s ">
-        <strong>OS 5666 - 891562</strong>
-        <span>EXD</span>
-        <span>90S</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5681-891574/index.html" data-busca="os 5681 - 891574 exd 132m ">
-        <strong>OS 5681 - 891574</strong>
-        <span>EXD</span>
-        <span>132M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5792-3294403/index.html" data-busca="os 5792 - 3294403 drs71m4 71m4 ">
-        <strong>OS 5792 - 3294403</strong>
-        <span>DRS71M4</span>
-        <span>71M4</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5615-891521/index.html" data-busca="os 5615 - 891521 exd 100l ">
-        <strong>OS 5615 - 891521</strong>
-        <span>EXD</span>
-        <span>100L</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-6268-7596788/index.html" data-busca="os 6268 - 7596788  132m ">
-        <strong>OS 6268 - 7596788</strong>
-        <span></span>
-        <span>132M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5454-3435790/index.html" data-busca="os 5454 - 3435790 comum 112m ">
-        <strong>OS 5454 - 3435790</strong>
-        <span>COMUM</span>
-        <span>112M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5400-3436043/index.html" data-busca="os 5400 - 3436043 comum 100m4 ">
-        <strong>OS 5400 - 3436043</strong>
-        <span>COMUM</span>
-        <span>100M4</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5721-3294408/index.html" data-busca="os 5721 - 3294408 exd 112m ">
-        <strong>OS 5721 - 3294408</strong>
-        <span>EXD</span>
-        <span>112M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5630-891509/index.html" data-busca="os 5630 - 891509 exd 132s/m ">
-        <strong>OS 5630 - 891509</strong>
-        <span>EXD</span>
-        <span>132S/M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5704-3294469/index.html" data-busca="os 5704 - 3294469 exd 200l ">
-        <strong>OS 5704 - 3294469</strong>
-        <span>EXD</span>
-        <span>200L</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5743-3294423/index.html" data-busca="os 5743 - 3294423  200l ">
-        <strong>OS 5743 - 3294423</strong>
-        <span></span>
-        <span>200L</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5607-891589/index.html" data-busca="os 5607 - 891589 exd 180m/l ">
-        <strong>OS 5607 - 891589</strong>
-        <span>EXD</span>
-        <span>180M/L</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-6238-7596771/index.html" data-busca="os 6238 - 7596771 exd 160m ">
-        <strong>OS 6238 - 7596771</strong>
-        <span>EXD</span>
-        <span>160M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-6066-7597328/index.html" data-busca="os 6066 - 7597328 sew 132m ">
-        <strong>OS 6066 - 7597328</strong>
-        <span>SEW</span>
-        <span>132M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-6232-7596765/index.html" data-busca="os 6232 - 7596765 exd 160m ">
-        <strong>OS 6232 - 7596765</strong>
-        <span>EXD</span>
-        <span>160M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5411-3435772/index.html" data-busca="os 5411 - 3435772 weg 132s ">
-        <strong>OS 5411 - 3435772</strong>
-        <span>WEG</span>
-        <span>132S</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5669-891526/index.html" data-busca="os 5669 - 891526 exd 100l ">
-        <strong>OS 5669 - 891526</strong>
-        <span>EXD</span>
-        <span>100L</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5653-891508/index.html" data-busca="os 5653 - 891508 exd 100l ">
-        <strong>OS 5653 - 891508</strong>
-        <span>EXD</span>
-        <span>100L</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5636-891547/index.html" data-busca="os 5636 - 891547 exd 132m ">
-        <strong>OS 5636 - 891547</strong>
-        <span>EXD</span>
-        <span>132M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-6144-4390688/index.html" data-busca="os 6144 - 4390688 comum l90s ">
-        <strong>OS 6144 - 4390688</strong>
-        <span>COMUM</span>
-        <span>L90S</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5674-3294421/index.html" data-busca="os 5674 - 3294421 exd 100l ">
-        <strong>OS 5674 - 3294421</strong>
-        <span>EXD</span>
-        <span>100L</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5846-4821390/index.html" data-busca="os 5846 - 4821390 exd 100l ">
-        <strong>OS 5846 - 4821390</strong>
-        <span>EXD</span>
-        <span>100L</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5891-4390564/index.html" data-busca="os 5891 - 4390564 exd 160m/l ">
-        <strong>OS 5891 - 4390564</strong>
-        <span>EXD</span>
-        <span>160M/L</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-6163-7597387/index.html" data-busca="os 6163 - 7597387 exd 132s/m ">
-        <strong>OS 6163 - 7597387</strong>
-        <span>EXD</span>
-        <span>132S/M</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5223-3294550/index.html" data-busca="os 5223 - 3294550 ext 200l ">
-        <strong>OS 5223 - 3294550</strong>
-        <span>EXT</span>
-        <span>200L</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5774-3294438/index.html" data-busca="os 5774 - 3294438 comum 80s4 ">
-        <strong>OS 5774 - 3294438</strong>
-        <span>COMUM</span>
-        <span>80S4</span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5391-3436065/index.html" data-busca="os 5391 - 3436065 comum  ">
-        <strong>OS 5391 - 3436065</strong>
-        <span>COMUM</span>
-        <span></span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5397-3436002/index.html" data-busca="os 5397 - 3436002 exd  ">
-        <strong>OS 5397 - 3436002</strong>
-        <span>EXD</span>
-        <span></span>
-        <small></small>
-      </a>
-
-      <a class="equipamento-card" href="equipamentos/OS-5225-3294505/index.html" data-busca="os 5225 - 3294505 comum 160l ">
-        <strong>OS 5225 - 3294505</strong>
-        <span>COMUM</span>
-        <span>160L</span>
-        <small></small>
+      <a class="equipamento-card" href="clientes/RUMO-MALHA-NORTE-S-A/index.html">
+        <img class="logo-cliente" src="Ativos/img/clientes/rumo.svg" alt="Logo RUMO MALHA NORTE S.A" loading="lazy">
+        <strong>RUMO MALHA NORTE S.A</strong>
+        <span>2 equipamento(s)</span>
       </a>
 
     </section>
   </main>
-
-  <footer>Gold Redutores - Data Book Digital</footer>
-
-  <script>
-    const campoBusca = document.getElementById("busca");
-    const cards = document.querySelectorAll(".equipamento-card");
-
-    campoBusca.addEventListener("input", function() {
-      const termo = campoBusca.value.toLowerCase().trim();
-      cards.forEach(card => {
-        const texto = card.getAttribute("data-busca");
-        card.style.display = texto.includes(termo) ? "block" : "none";
-      });
-    });
-  </script>
-
+  <footer>Gold Soluções e Serviços - Data Book Digital</footer>
+  
 </body>
 </html>

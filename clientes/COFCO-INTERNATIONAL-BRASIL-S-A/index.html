@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Book Digital - COFCO INTERNATIONAL BRASIL S.A.</title>
+  <link rel="stylesheet" href="../../Ativos/css/style.css">
+  <style>
+    .header-slider-wrapper { position: sticky; top: 0; z-index: 1000; }
+    #slider { width: 90%; max-width: 1080px; height: 70px; position: relative; overflow: hidden; margin: 8px auto 15px; border: 1px solid #333; background: #fff; }
+    .slides { display: flex; width: 400%; height: 100%; position: relative; animation: slide 5s infinite; }
+    .slider { flex: 0 0 25%; height: 100%; overflow: hidden; box-sizing: border-box; border-right: 2px solid #333; }
+    .image { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+    .image img { width: 70%; height: 80%; object-fit: contain; display: block; }
+    .switch { width: 120px; height: 10px; position: absolute; bottom: 18px; left: 20px; }
+    .switch ul { list-style: none; overflow: hidden; padding: 0; margin: 0; }
+    .switch li { width: 6px; height: 6px; border-radius: 50%; background: #333; float: left; margin-right: 9px; }
+    .on { width: 100%; height: 100%; border-radius: 50%; background: #1775b1; animation: on 5s infinite; }
+    .logo-cliente { display: block; width: 100%; height: 82px; margin: 0 auto 16px; padding: 8px; object-fit: contain; background: #fff; border-radius: 8px; }
+    @keyframes slide { 0%, 22% { transform: translateX(0); } 25%, 47% { transform: translateX(-25%); } 50%, 72% { transform: translateX(-50%); } 75%, 100% { transform: translateX(-75%); } }
+    @keyframes on { 0%, 22% { margin-left: 0; } 25%, 47% { margin-left: 15px; } 50%, 100% { margin-left: 30px; } }
+  </style>
+</head>
+<body>
+
+  <div class="header-slider-wrapper">
+    <header class="topo">
+      <div class="header-row">
+        <div class="logos">
+          <img class="logo-gold" src="https://i.ibb.co/zWgjxdtj/logo.png" alt="Gold Redutores">
+        </div>
+        <div class="header-text">
+          <div class="tipo">Data Book Digital</div>
+          <div class="tag">COFCO INTERNATIONAL BRASIL S.A.</div>
+        </div>
+      </div>
+    </header>
+    <div id="slider">
+      <div class="slides">
+        <div class="slider"><div class="image"><img src="https://i.ibb.co/V07bLNT1/GOLD-MAQUINAS.png" alt="Logo Gold Redutores"></div></div>
+        <div class="slider"><div class="image"><img src="https://i.ibb.co/r9DRsZq/GOLD-REDUTORES.png" alt="Gold Redutores"></div></div>
+        <div class="slider"><div class="image"><img src="https://i.ibb.co/3mVp95wL/GOLD-AUTOMA-O.png" alt="Gold Automação"></div></div>
+        <div class="slider" aria-hidden="true"><div class="image"><img src="https://i.ibb.co/V07bLNT1/GOLD-MAQUINAS.png" alt=""></div></div>
+      </div>
+      <div class="switch"><ul><li><div class="on"></div></li><li></li><li></li></ul></div>
+    </div>
+  </div>
+  <main class="container">
+    <section class="card">
+      <h2>Equipamentos cadastrados</h2>
+      <p>Equipamentos cadastrados para COFCO INTERNATIONAL BRASIL S.A..</p>
+      <div class='botoes'><a class="botao secundario" href="../../index.html">Voltar para lista geral</a></div>
+      <input class='busca' id='busca' type='text' placeholder='Exemplo: OS 6251, motoredutor, WEG...'>
+    </section>
+    <section class="grid-equipamentos" id="listaEquipamentos">
+      
+      <a class="equipamento-card" href="../../equipamentos/OS-5684-2394460/index.html" data-busca="os 5684 - 2394460 exd 160l ">
+        <strong>OS 5684 - 2394460</strong>
+        <span>EXD</span>
+        <span>160L</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5641-891527/index.html" data-busca="os 5641 - 891527 exd 132s ">
+        <strong>OS 5641 - 891527</strong>
+        <span>EXD</span>
+        <span>132S</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5701-3294440/index.html" data-busca="os 5701 - 3294440 exd 180m ">
+        <strong>OS 5701 - 3294440</strong>
+        <span>EXD</span>
+        <span>180M</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5715-3294412/index.html" data-busca="os 5715 - 3294412 exd 225s/m ">
+        <strong>OS 5715 - 3294412</strong>
+        <span>EXD</span>
+        <span>225S/M</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5740-3294401/index.html" data-busca="os 5740 - 3294401 exd 90s ">
+        <strong>OS 5740 - 3294401</strong>
+        <span>EXD</span>
+        <span>90S</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5790-3294495/index.html" data-busca="os 5790 - 3294495 exd 132s ">
+        <strong>OS 5790 - 3294495</strong>
+        <span>EXD</span>
+        <span>132S</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5628-891507/index.html" data-busca="os 5628 - 891507 exd 160m ">
+        <strong>OS 5628 - 891507</strong>
+        <span>EXD</span>
+        <span>160M</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5742-3294496/index.html" data-busca="os 5742 - 3294496 exd 112m ">
+        <strong>OS 5742 - 3294496</strong>
+        <span>EXD</span>
+        <span>112M</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5604-891572/index.html" data-busca="os 5604 - 891572 exd 180l ">
+        <strong>OS 5604 - 891572</strong>
+        <span>EXD</span>
+        <span>180L</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5718-3294480/index.html" data-busca="os 5718 - 3294480 exd 160m ">
+        <strong>OS 5718 - 3294480</strong>
+        <span>EXD</span>
+        <span>160M</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5666-891562/index.html" data-busca="os 5666 - 891562 exd 90s ">
+        <strong>OS 5666 - 891562</strong>
+        <span>EXD</span>
+        <span>90S</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5681-891574/index.html" data-busca="os 5681 - 891574 exd 132m ">
+        <strong>OS 5681 - 891574</strong>
+        <span>EXD</span>
+        <span>132M</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5792-3294403/index.html" data-busca="os 5792 - 3294403 drs71m4 71m4 ">
+        <strong>OS 5792 - 3294403</strong>
+        <span>DRS71M4</span>
+        <span>71M4</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5615-891521/index.html" data-busca="os 5615 - 891521 exd 100l ">
+        <strong>OS 5615 - 891521</strong>
+        <span>EXD</span>
+        <span>100L</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5454-3435790/index.html" data-busca="os 5454 - 3435790 comum 112m ">
+        <strong>OS 5454 - 3435790</strong>
+        <span>COMUM</span>
+        <span>112M</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5400-3436043/index.html" data-busca="os 5400 - 3436043 comum 100m4 ">
+        <strong>OS 5400 - 3436043</strong>
+        <span>COMUM</span>
+        <span>100M4</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5721-3294408/index.html" data-busca="os 5721 - 3294408 exd 112m ">
+        <strong>OS 5721 - 3294408</strong>
+        <span>EXD</span>
+        <span>112M</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5630-891509/index.html" data-busca="os 5630 - 891509 exd 132s/m ">
+        <strong>OS 5630 - 891509</strong>
+        <span>EXD</span>
+        <span>132S/M</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5704-3294469/index.html" data-busca="os 5704 - 3294469 exd 200l ">
+        <strong>OS 5704 - 3294469</strong>
+        <span>EXD</span>
+        <span>200L</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5743-3294423/index.html" data-busca="os 5743 - 3294423  200l ">
+        <strong>OS 5743 - 3294423</strong>
+        <span></span>
+        <span>200L</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5607-891589/index.html" data-busca="os 5607 - 891589 exd 180m/l ">
+        <strong>OS 5607 - 891589</strong>
+        <span>EXD</span>
+        <span>180M/L</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5411-3435772/index.html" data-busca="os 5411 - 3435772 weg 132s ">
+        <strong>OS 5411 - 3435772</strong>
+        <span>WEG</span>
+        <span>132S</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5669-891526/index.html" data-busca="os 5669 - 891526 exd 100l ">
+        <strong>OS 5669 - 891526</strong>
+        <span>EXD</span>
+        <span>100L</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5653-891508/index.html" data-busca="os 5653 - 891508 exd 100l ">
+        <strong>OS 5653 - 891508</strong>
+        <span>EXD</span>
+        <span>100L</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5636-891547/index.html" data-busca="os 5636 - 891547 exd 132m ">
+        <strong>OS 5636 - 891547</strong>
+        <span>EXD</span>
+        <span>132M</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-6144-4390688/index.html" data-busca="os 6144 - 4390688 comum l90s ">
+        <strong>OS 6144 - 4390688</strong>
+        <span>COMUM</span>
+        <span>L90S</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5674-3294421/index.html" data-busca="os 5674 - 3294421 exd 100l ">
+        <strong>OS 5674 - 3294421</strong>
+        <span>EXD</span>
+        <span>100L</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5391-3436065/index.html" data-busca="os 5391 - 3436065 comum 80mp4 ">
+        <strong>OS 5391 - 3436065</strong>
+        <span>COMUM</span>
+        <span>80MP4</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-5397-3436002/index.html" data-busca="os 5397 - 3436002 exd  ">
+        <strong>OS 5397 - 3436002</strong>
+        <span>EXD</span>
+        <span></span>
+        <small></small>
+      </a>
+
+    </section>
+  </main>
+  <footer>Gold Soluções e Serviços - Data Book Digital</footer>
+  <script>const campoBusca = document.getElementById('busca'); const cards = document.querySelectorAll('.equipamento-card'); campoBusca.addEventListener('input', function() {{ const termo = campoBusca.value.toLowerCase().trim(); cards.forEach(card => {{ card.style.display = card.getAttribute('data-busca').includes(termo) ? 'block' : 'none'; }}); }});</script>
+</body>
+</html>

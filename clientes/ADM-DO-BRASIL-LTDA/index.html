@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Book Digital - ADM DO BRASIL LTDA</title>
+  <link rel="stylesheet" href="../../Ativos/css/style.css">
+  <style>
+    .header-slider-wrapper { position: sticky; top: 0; z-index: 1000; }
+    #slider { width: 90%; max-width: 1080px; height: 70px; position: relative; overflow: hidden; margin: 8px auto 15px; border: 1px solid #333; background: #fff; }
+    .slides { display: flex; width: 400%; height: 100%; position: relative; animation: slide 5s infinite; }
+    .slider { flex: 0 0 25%; height: 100%; overflow: hidden; box-sizing: border-box; border-right: 2px solid #333; }
+    .image { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+    .image img { width: 70%; height: 80%; object-fit: contain; display: block; }
+    .switch { width: 120px; height: 10px; position: absolute; bottom: 18px; left: 20px; }
+    .switch ul { list-style: none; overflow: hidden; padding: 0; margin: 0; }
+    .switch li { width: 6px; height: 6px; border-radius: 50%; background: #333; float: left; margin-right: 9px; }
+    .on { width: 100%; height: 100%; border-radius: 50%; background: #1775b1; animation: on 5s infinite; }
+    .logo-cliente { display: block; width: 100%; height: 82px; margin: 0 auto 16px; padding: 8px; object-fit: contain; background: #fff; border-radius: 8px; }
+    @keyframes slide { 0%, 22% { transform: translateX(0); } 25%, 47% { transform: translateX(-25%); } 50%, 72% { transform: translateX(-50%); } 75%, 100% { transform: translateX(-75%); } }
+    @keyframes on { 0%, 22% { margin-left: 0; } 25%, 47% { margin-left: 15px; } 50%, 100% { margin-left: 30px; } }
+  </style>
+</head>
+<body>
+
+  <div class="header-slider-wrapper">
+    <header class="topo">
+      <div class="header-row">
+        <div class="logos">
+          <img class="logo-gold" src="https://i.ibb.co/zWgjxdtj/logo.png" alt="Gold Redutores">
+        </div>
+        <div class="header-text">
+          <div class="tipo">Data Book Digital</div>
+          <div class="tag">ADM DO BRASIL LTDA</div>
+        </div>
+      </div>
+    </header>
+    <div id="slider">
+      <div class="slides">
+        <div class="slider"><div class="image"><img src="https://i.ibb.co/V07bLNT1/GOLD-MAQUINAS.png" alt="Logo Gold Redutores"></div></div>
+        <div class="slider"><div class="image"><img src="https://i.ibb.co/r9DRsZq/GOLD-REDUTORES.png" alt="Gold Redutores"></div></div>
+        <div class="slider"><div class="image"><img src="https://i.ibb.co/3mVp95wL/GOLD-AUTOMA-O.png" alt="Gold Automação"></div></div>
+        <div class="slider" aria-hidden="true"><div class="image"><img src="https://i.ibb.co/V07bLNT1/GOLD-MAQUINAS.png" alt=""></div></div>
+      </div>
+      <div class="switch"><ul><li><div class="on"></div></li><li></li><li></li></ul></div>
+    </div>
+  </div>
+  <main class="container">
+    <section class="card">
+      <h2>Equipamentos cadastrados</h2>
+      <p>Equipamentos cadastrados para ADM DO BRASIL LTDA.</p>
+      <div class='botoes'><a class="botao secundario" href="../../index.html">Voltar para lista geral</a></div>
+      <input class='busca' id='busca' type='text' placeholder='Exemplo: OS 6251, motoredutor, WEG...'>
+    </section>
+    <section class="grid-equipamentos" id="listaEquipamentos">
+      
+      <a class="equipamento-card" href="../../equipamentos/OS-6268-7596788/index.html" data-busca="os 6268 - 7596788  132m ">
+        <strong>OS 6268 - 7596788</strong>
+        <span></span>
+        <span>132M</span>
+        <small></small>
+      </a>
+
+      <a class="equipamento-card" href="../../equipamentos/OS-6232-7596765/index.html" data-busca="os 6232 - 7596765 exd 160m ">
+        <strong>OS 6232 - 7596765</strong>
+        <span>EXD</span>
+        <span>160M</span>
+        <small></small>
+      </a>
+
+    </section>
+  </main>
+  <footer>Gold Soluções e Serviços - Data Book Digital</footer>
+  <script>const campoBusca = document.getElementById('busca'); const cards = document.querySelectorAll('.equipamento-card'); campoBusca.addEventListener('input', function() {{ const termo = campoBusca.value.toLowerCase().trim(); cards.forEach(card => {{ card.style.display = card.getAttribute('data-busca').includes(termo) ? 'block' : 'none'; }}); }});</script>
+</body>
+</html>
